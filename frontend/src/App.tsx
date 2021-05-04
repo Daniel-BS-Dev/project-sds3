@@ -1,9 +1,18 @@
+import DataTable from "componnets/DataTable"
+import Footer from "componnets/Footer"
+import NavBar from "componnets/NavBar"
 
-function App() {
+const App = () => {
   return (
-   <div>
-     <h1 className="text-primary">hello world</h1>
-   </div>
+    <>
+      <NavBar />
+       <div className="container">
+         <h1 className="text-primary">hello world</h1>
+
+        <DataTable />
+       </div>
+       <Footer />
+      </>
   );
 }
 

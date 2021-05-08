@@ -18,8 +18,9 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-           <Footer />
-    </>
-    );
+           <Footer/>
+           
+        </>
+  );
 }
 export default Home;

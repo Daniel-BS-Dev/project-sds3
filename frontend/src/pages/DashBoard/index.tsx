@@ -19,7 +19,7 @@ const DashBoard = () => {
                </div>
                <div className="col-sm-6">
                   <h5 className="text-center text-secondary">
-                     Taxa de sucesso(%)
+                     % sucesso
                    </h5>
                     <DonutChart />
                </div>

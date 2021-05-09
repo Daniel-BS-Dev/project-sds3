@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { SaleSuccess, SaleSum } from 'componnets/DataTable/types/sale';
+import { SaleSuccess } from 'componnets/DataTable/types/sale';
 import { useEffect, useState } from 'react';
 import Chart from'react-apexcharts';
 import { round } from 'utils/format';
@@ -56,18 +56,7 @@ useEffect(() => {
             }
         },
     };
-    
-    const mockData = {
-        labels: {
-            categories: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
-        },
-        series: [
-            {
-                name: "% Sucesso",
-                data: [43.6, 67.1, 67.7, 45.6, 71.1]                   
-            }
-        ]
-    };
+  
     return(
           <Chart 
              options={{...options, xaxis: chartData.labels}}
